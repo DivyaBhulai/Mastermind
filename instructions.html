@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mastermind</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* CSS voor de Navigatiebalk */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    .row.content {height: 450px}
+
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* CSS voor footer */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* Code voor responsive van de pagina */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Game</a></li>
+        <li><a href="instructions.html">Help!!! / How to play</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <!--Spel regels-->
+
+    <div class="col-sm-8 text-left">
+      <h1>Help!!! / How to play</h1><br>
+      <h2> Doel van het spel</h2>
+      <p>Vind de juiste kleurencombinatie</p>
+      <br> <h2>Hoe speel je het spel?</h2>
+      <p>Klik op de witte vakjes van de 1ste rij. Zo veranderen ze van kleur. Klik op het 'Raad' knopje.
+        Als de kleur op de juiste plek zit, blijft hij staan op de volgende regel.</p>
+     </div>
+  </div>
+</div>
+
+<!-- De footer -->
+<footer class="container-fluid text-center">
+  <p>Gemaakt door: Divya Bhulai ♥ ©</p>
+</footer>
+
+</body>
+</html>
