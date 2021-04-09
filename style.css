@@ -1,0 +1,47 @@
+/* CSS voor de Navigatiebalk */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.row.content {height: 450px}
+
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* CSS voor footer */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* Code voor responsive van de pagina */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+}
+
+#tabel {
+    border: 1px;
+}
+
+.rij {
+    border: 1px;
+}
+
+.kolom {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    background-color: #FFF;
+    text-align: center;
+    font-size: 16;
+}
