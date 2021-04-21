@@ -40,8 +40,14 @@ footer {
     display: inline-block;
     width: 40px;
     height: 40px;
-    border: 1px solid red;
+    border: 1px solid darkblue;
     background-color: #FFF;
     text-align: center;
     font-size: 16;
+}
+
+
+/* CSS voor antwoorden rij */
+.onbekend {
+    background-color: #CCC;
 }
