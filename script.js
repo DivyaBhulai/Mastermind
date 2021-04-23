@@ -15,13 +15,13 @@ function AntwoordenRij(){
         //Zet kleuren in list antwoord
         antwoord.push(kleur);
         //Check
-        alert("kleur");
+        alert(kleur);
     }
-    //Ga naar funcctie PogingRij
+    //Ga naar functie PogingRij
     PogingRij(1);
 }
 
 function PogingRij(rijNummer){
     // Rij voor poging toevoegen + Raad! knopje maken
-
+    document.querySelector('#tabel').insertAdjacentHTML('beforeend')
 }
