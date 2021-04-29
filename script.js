@@ -22,6 +22,15 @@ function AntwoordenRij(){
 }
 
 function PogingRij(rijNummer){
-    // Rij voor poging toevoegen + Raad! knopje maken
-    document.querySelector('#tabel').insertAdjacentHTML('beforeend')
+  // Rij voor pogingen toevoegen
+  document.querySelector('#tabel').insertAdjacentHTML(
+      'beforeend',
+      `<div id="rij` + rijNummer + `">
+          <div class="kolom" id="rij` + rijNummer + `_kolom0">&nbsp;</div>
+          <div class="kolom" id="rij` + rijNummer + `_kolom1">&nbsp;</div>
+          <div class="kolom" id="rij` + rijNummer + `_kolom2">&nbsp;</div>
+          <div class="kolom" id="rij` + rijNummer + `_kolom3">&nbsp;</div>
+          <div class="raad" id="rij` + rijNummer + `_raad">Raad!</div>
+      </div>`
+  );
 }
