@@ -46,8 +46,18 @@ footer {
     font-size: 16;
 }
 
-
 /* CSS voor antwoorden rij */
 .onbekend {
-    background-color: #CCC;
+    background-color: #b0a9a9;
+}
+
+/*Raad knopje*/
+.raad {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    border: 1px solid gray;
+    background-color: #FFF;
+    text-align: center;
+    font-size: 16;
 }
