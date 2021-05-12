@@ -53,4 +53,22 @@ function PogingRij(rijNummer){
     this.setAttribute('style', 'background-color: ' + kleuren[nieuweKleur]);
     raad[kolom] = nieuweKleur;
   }
+  document.querySelector('#rij' + rijNummer + '_raad').addEventListener('click', function(){
+    // Je kan niet meer klikken op de vorige pogingen
+    this.style.display = 'none';
+    document.querySelector('#rij' + rijNummer + '_kolom0').removeEventListener('click', selecteerKleur);
+    document.querySelector('#rij' + rijNummer + '_kolom1').removeEventListener('click', selecteerKleur);
+    document.querySelector('#rij' + rijNummer + '_kolom2').removeEventListener('click', selecteerKleur);
+    document.querySelector('#rij' + rijNummer + '_kolom3').removeEventListener('click', selecteerKleur);
+    // Als poging overeenkomt met antwoord verander 1e rij (die grijs gekleurd is) in de geraden kleur
+    for(var i = 0; i < 4; i++){
+      if(raad[i] == antwoord[i]){
+        gevonden[i] = true;
+
+        var cel = document.querySelector('#antwoord_kolom' + i);
+        cel.classList.remove('onbekend');
+        cel.setAttribute('style', 'background-color: ' + kleuren[raad[i]]);
+      }
+    }
+  }
 }
