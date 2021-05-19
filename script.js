@@ -78,7 +78,11 @@ function PogingRij(rijNummer){
       for(var i = 0; i < 4; i++){
         if(!gevonden[i]) niet_gevonden++;
       }
-      if(niet_gevonden > 0) PogingRij(rijNummer + 1);
+      if(niet_gevonden > 0) {
+        PogingRij(rijNummer + 1);
+      } else{ //bericht na het raden van de kleurencombinatie voor de escape room
+        alert("Goed zo! Het middelste getal is 4 ;)");
+      }
     })
     document.querySelector('#rij' + rijNummer + '_kolom0').addEventListener('click', selecteerKleur);
     document.querySelector('#rij' + rijNummer + '_kolom1').addEventListener('click', selecteerKleur);
